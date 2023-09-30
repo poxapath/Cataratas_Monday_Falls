@@ -1,0 +1,52 @@
+<!-- Iniciamos sempre com as definições de html -->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastre-se</title>
+       <!-- Não deixando de linkar o css --> 
+        <link rel="stylesheet" href="styles.css">
+       <!-- Aqui ainda chamaremos uma api para os ícones do rodapé  -->
+        <script src="https://kit.fontawesome.com/65a36bd056.js" crossorigin="anonymous"></script>  
+    </head>
+ <!-- E assim vamos aos conteúdos da página  -->
+
+    <body>
+       <!-- #1 Cabeçalho  -->
+        <header>
+            <a href="index.html">Inicio</a>
+            <a href="nos.html">Aspectos Geográficos</a>
+            <a href="conosco.html">Cadastre-se</a>
+        </header>
+
+       <!-- #2 Texto antes da área de cadastro para motivar o usuário a fazer o cadastro -->
+        <div class="explicacao">
+            <p>Faça seu cadastro para receber orientações sobre os pacotes de viagens disponíveis e dicas para vir conhecer essa maravilha!</p>
+        </div>
+        
+       <!-- #3 Criando nosso espaço para cadastro/login -->
+        <form>
+            <label for="Nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Crie sua senha" required>
+        
+            <button type="submit">Cadastrar</button>
+            <p id="cadastro">Já possuo Cadastro</p>
+            <button type="login">Login</button>
+        </form>
+
+        <!-- #  Rodapé  -->
+        <footer>
+            <span>Visite também nossas redes</span>
+            <i class="fa-brands fa-instagram"></i> Instagram 
+            <i class="fa-brands fa-facebook"></i> Facebook 
+            <i class="fa-brands fa-airbnb"></i> Airbnb  |  Feito por Patrícia Nogueira
+        </footer>
+    </body>
+</html>
